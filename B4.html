@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employee Form</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        background: white;
+        border: 10px solid #ccc;
+        padding: 20px;
+        width: 600px;
+        margin: auto;
+      }
+      label {
+        display: inline-block;
+        width: 120px;
+        margin-bottom: 10px;
+      }
+      h3 {
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 4px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="datetime-local"],
+      select,
+      textarea {
+        width: 300px;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      textarea {
+        height: 80px;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .checkbox-label,
+      .radio-label {
+        margin-right: 15px;
+      }
+      .submit-buttons {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="section">
+          <h3>Basic Info</h3>
+          <br />
+
+          <label>Employee ID: </label>
+          <div style="display: inline">9</div>
+          <br />
+
+          <label>Last Name:</label><input type="text" value="Dodsworth" /><br />
+          <label>First Name:</label><input type="text" value="Anne" /><br />
+          <label>Gender:</label>
+          <span class="radio-label"
+            ><input type="radio" name="gender" /> Male</span
+          >
+          <span class="radio-label"
+            ><input type="radio" name="gender" /> Female</span
+          >
+          <span class="radio-label"
+            ><input type="radio" name="gender" checked /> XXX</span
+          >
+          <span class="radio-label"
+            ><input type="radio" name="gender" /> ZZZ</span
+          ><br />
+          <label>Title:</label
+          ><input type="text" value="Sales Representative" /><br />
+          <label>Suffix:</label><input type="text" value="Ms." /><br />
+          <label>Birth Date:</label
+          ><input type="datetime-local" value="1959-07-02T00:00" /><br />
+          <label>Hire Date:</label
+          ><input type="datetime-local" value="1994-11-15T00:00" /><br />
+          <label>SSN:</label><input type="text" /><br />
+          <label>Reports To:</label>
+          <select>
+            <option selected>Buchanan</option>
+          </select>
+        </div>
+
+        <div class="section">
+          <h3>Contact Info</h3>
+          <label>Email:</label
+          ><input type="email" placeholder="name@example.com" /><br />
+          <label>Address:</label
+          ><input type="text" value="7 Houndstooth Rd." /><br />
+          <label>City:</label><input type="text" value="London" /><br />
+          <label>Region:</label><input type="text" /><br />
+          <label>Postal Code:</label><input type="text" value="WG2 7LT" /><br />
+          <label>Country:</label>
+          <select>
+            <option selected>Russian Federation</option></select
+          ><br />
+          <label>US Home Phone:</label
+          ><input type="text" value="(234)234-2342" /><br />
+          <label>Photo:</label><input type="text" value="EmpID9.bmp" />
+        </div>
+
+        <div class="section">
+          <h3>Optional Info</h3>
+          <label>Notes:</label><br />
+          <textarea>
+Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.ZZZ</textarea
+          ><br />
+          <label>Preferred Shift:</label>
+          <span class="radio-label"
+            ><input type="radio" name="shift" checked /> Regular</span
+          >
+          <span class="radio-label"
+            ><input type="radio" name="shift" /> Gravy Yard</span
+          ><br />
+          <label>Active:</label><input type="checkbox" checked /><br />
+          <label>Are you human?</label
+          ><input type="text" value="TIDAWO" /><br />
+          <div class="submit-buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
